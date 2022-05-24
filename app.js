@@ -9,10 +9,11 @@
       const humidity = data.main.humidity;
       const speed = data.wind.speed;
       const deg = data.wind.deg;
-      const icon = 'http://openweathermap.org/img/w/04d.png';
+      //const icon = 'http://openweathermap.org/img/w/10d.png';
+      const image = 'http://openweathermap.org/img/w/' + data.weather[0]['icon'] + '.png';
       const imgIcon = document.querySelector('.icon');
       const img = document.createElement('img');
-      img.setAttribute("src", icon);
+      img.setAttribute("src", image);
       imgIcon.appendChild(img);
          
      
